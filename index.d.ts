@@ -26,7 +26,7 @@
  * ```
  *   -
  */
-
+type BufferEncoding = 'ascii' | 'utf8' | 'utf16le' | 'ucs2' | 'base64' | 'base64url' | 'latin1' | 'binary' | 'hex';
 export interface EnvLoaderOptions {
     /** 环境变量文件路径，默认为 '.env' */
     path?: string;
