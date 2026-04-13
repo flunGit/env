@@ -1,5 +1,10 @@
-const fs = require('fs'), path = require('path'), { exampleLines } = require('./env'),
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { exampleLines } from './env.js';
 
+// 获取当前文件所在目录（相当于 __dirname）
+const __filename = fileURLToPath(import.meta.url), __dirname = path.dirname(__filename),
     // 检查项目根目录
     packageDir = __dirname, projectRoot = path.resolve(packageDir, '../..'), // 向上两级到项目根目录
     projectEnvPath = path.join(projectRoot, '.env');
@@ -20,5 +25,5 @@ function checkAndCreateEnvFile() {
 }
 
 // 执行脚本并导出函数
-if (require.main === module) checkAndCreateEnvFile();
-module.exports = { checkAndCreateEnvFile };
+if (process.argv[1] === fileURLToPath(import.meta.url)) checkAndCreateEnvFile();
+export { checkAndCreateEnvFile };

@@ -22,4 +22,4 @@ const exampleLines = [
     '',
     '# 使用格式: env.变量名'
 ];
-module.exports = { exampleLines };
+export { exampleLines };

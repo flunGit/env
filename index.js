@@ -1,4 +1,7 @@
-const fs = require('fs'), path = require('path'), os = require('os'), { exampleLines } = require('./env');
+import fs from 'fs';
+import path from 'path';
+import os from 'os';
+import { exampleLines } from './env.js';
 
 class EnvLoader {
     constructor(options = {}) {
@@ -176,14 +179,15 @@ class EnvLoader {
 }
 
 let defaultEnv = null; // 延迟创建默认实例
+const env = (() => {
+    if (!defaultEnv) defaultEnv = new EnvLoader({ path: '.env', encoding: 'utf8', debug: false });
+    return defaultEnv;
+})();
+
+function config(options = {}) {
+    if (typeof options === 'string') options = { path: options };
+    const { path = '.env', encoding = 'utf8', debug = false } = options;
+    return new EnvLoader({ path, encoding, debug });
+}
 // 导出对象
-module.exports = {
-    get env() {
-        return defaultEnv || (defaultEnv = new EnvLoader({ path: '.env', encoding: 'utf8', debug: false }));
-    },
-    config: (options = {}) => {
-        if (typeof options === 'string') options = { path: options };
-        const { path = '.env', encoding = 'utf8', debug = false } = options;
-        return new EnvLoader({ path, encoding, debug });
-    }
-};
+export { env, config };
