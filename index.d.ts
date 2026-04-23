@@ -33,7 +33,7 @@ declare module './install.js' {
  * function config();  // 自定义配置(对象:路径,编码,是否打印调试信息)
  * ```
  * ---
- *    -
+ * >
  * ```js
  *  // 默认使用示例
  *  import { env } from 'flun-env';
@@ -50,7 +50,7 @@ declare module './install.js' {
  *
  *   console.log(cEnv.PORT); // 访问配置项
  * ```
- *   -
+ * ---
  * >查看定义:@see {@link env}、{@link config}
  */
 declare module './index.js' {
