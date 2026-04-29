@@ -34,7 +34,7 @@
         "type": "git",
         "url": "git+https://github.com/flunGit/flun_ENV.git"
     },
-    "homepage": "https://www.npmjs.com/flunGit/flun-env#readme",
+    "homepage": "https://www.npmjs.com/package/flun-env#readme",
     "bugs": {
         "url": "https://github.com/flunGit/flun_ENV/issues"
     },
