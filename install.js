@@ -5,8 +5,8 @@ import { exampleLines } from './env.js';
 
 // 获取当前文件所在目录（相当于 __dirname）
 const __filename = fileURLToPath(import.meta.url), __dirname = path.dirname(__filename),
-    // 检查项目根目录(向上两级)
-    projectRoot = path.resolve(__dirname, '../..'), projectEnvPath = path.join(projectRoot, '.env');
+    // 检查项目根目录(向上3级)
+    projectRoot = path.resolve(__dirname, '../../..'), projectEnvPath = path.join(projectRoot, '.env');
 
 /**
  * 检查并创建 .env 示例文件
