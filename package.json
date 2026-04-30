@@ -26,8 +26,7 @@
         "env",
         "environment",
         "variables",
-        "config",
-        "flun"
+        "config"
     ],
     "author": "flun <cn@flun.top>",
     "repository": {
