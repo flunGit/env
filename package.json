@@ -1,5 +1,5 @@
 {
-    "name": "flun-env",
+    "name": "@flun/env",
     "version": "3.1.4",
     "description": "A simple package to read .env environment files",
     "type": "module",
@@ -29,13 +29,16 @@
         "config"
     ],
     "author": "flun <cn@flun.top>",
+    "publishConfig": {
+        "access": "public"
+    },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/flunGit/flun_ENV.git"
+        "url": "git+https://github.com/flunGit/env.git"
     },
-    "homepage": "https://www.npmjs.com/package/flun-env#readme",
+    "homepage": "https://www.npmjs.com/package/@flun/env#readme",
     "bugs": {
-        "url": "https://github.com/flunGit/flun_ENV/issues"
+        "url": "https://github.com/flunGit/env/issues"
     },
     "license": "ISC",
     "engines": {

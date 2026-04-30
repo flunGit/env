@@ -1,10 +1,10 @@
-# flun-env一个简单易用的 .env 环境变量文件读取工具
+# @flun/env一个简单易用的 .env 环境变量文件读取工具
 ### 本包以 ESM 模块系统编写->未来趋势;只要你的 Node.js 版本大于22.12,可保留CJS `require()` 语法调用,否则请使用 `import` 语法;
 
 ## 安装
 
 ```sh
-npm i flun-env
+npm i @flun/env
 ```
 
 ## 特性
@@ -53,7 +53,7 @@ NODE_ENV=development
 ### 默认配置(示例)
 
 ```js
-import { env } from 'flun-env';
+import { env } from '@flun/env';
 
 // 直接使用变量
 console.log(env.DATABASE_URL);
@@ -73,7 +73,7 @@ console.log('所有变量:', allVars);
 ### 自定义配置(示例):
 
 ```js
-import { config } from 'flun-env';
+import { config } from '@flun/env';
 const cEnv = config({
     path: './path/.env', // 自定义路径 (自定义路径如果是相对路径,那么请以工作路径作为基准设置->向上或向下或同级)
     encoding: 'utf8',    // 字符集 (默认utf8)
