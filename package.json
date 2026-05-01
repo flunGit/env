@@ -1,6 +1,6 @@
 {
   "name": "@flun/env",
-  "version": "3.1.8",
+  "version": "3.1.9",
   "description": "A simple package to read .env environment files",
   "type": "module",
   "types": "index.d.ts",
@@ -10,10 +10,6 @@
   "main": "index.js",
   "bin": {
     "env-init": "install.js"
-  },
-  "scripts": {
-    "postinstall": "node install.js 2>&1",
-    "test": "echo \"Test completed\" && exit 0"
   },
   "files": [
     "index.js",
@@ -43,5 +39,6 @@
   "license": "ISC",
   "engines": {
     "node": ">=22.12.0"
-  }
+  },
+  "scripts": {}
 }
