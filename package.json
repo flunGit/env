@@ -1,47 +1,44 @@
 {
-    "name": "@flun/env",
-    "version": "3.1.7",
-    "description": "A simple package to read .env environment files",
-    "type": "module",
-    "types": "index.d.ts",
-    "exports": {
-        ".": "./index.js"
-    },
-    "main": "index.js",
-    "bin": {
-        "env-init": "install.js"
-    },
-    "scripts": {
-        "postinstall": "node install.js 2>&1",
-        "test": "echo \"Test completed\" && exit 0"
-    },
-    "files": [
-        "index.js",
-        "install.js",
-        "env.js",
-        "index.d.ts",
-        "CHANGELOG.md"
-    ],
-    "keywords": [
-        "env",
-        "environment",
-        "variables",
-        "config"
-    ],
-    "author": "flun <cn@flun.top>",
-    "publishConfig": {
-        "access": "public"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/flunGit/env.git"
-    },
-    "homepage": "https://www.npmjs.com/package/@flun/env#readme",
-    "bugs": {
-        "url": "https://github.com/flunGit/env/issues"
-    },
-    "license": "ISC",
-    "engines": {
-        "node": ">=22.12.0"
-    }
+  "name": "@flun/env",
+  "version": "3.1.8",
+  "description": "A simple package to read .env environment files",
+  "type": "module",
+  "types": "index.d.ts",
+  "exports": {
+    ".": "./index.js"
+  },
+  "main": "index.js",
+  "bin": {
+    "env-init": "install.js"
+  },
+  "scripts": {},
+  "files": [
+    "index.js",
+    "install.js",
+    "env.js",
+    "index.d.ts",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "env",
+    "environment",
+    "variables",
+    "config"
+  ],
+  "author": "flun <cn@flun.top>",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flunGit/env.git"
+  },
+  "homepage": "https://www.npmjs.com/package/@flun/env#readme",
+  "bugs": {
+    "url": "https://github.com/flunGit/env/issues"
+  },
+  "license": "ISC",
+  "engines": {
+    "node": ">=22.12.0"
+  }
 }
