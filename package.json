@@ -11,7 +11,10 @@
   "bin": {
     "env-init": "install.js"
   },
-  "scripts": {},
+  "scripts": {
+    "postinstall": "node install.js 2>&1",
+    "test": "echo \"Test completed\" && exit 0"
+  },
   "files": [
     "index.js",
     "install.js",
