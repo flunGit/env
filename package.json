@@ -30,11 +30,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flunGit/env.git"
+    "url": "git+https://github.com/OpenFlun/env.git"
   },
   "homepage": "https://www.npmjs.com/package/@flun/env#readme",
   "bugs": {
-    "url": "https://github.com/flunGit/env/issues"
+    "url": "https://github.com/OpenFlun/env/issues"
   },
   "license": "ISC",
   "engines": {
